@@ -37,7 +37,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Bean
+    @Bean // 의존성 컨테이너에 집어넣은 것
     public PasswordEncoder passwordEncoder() {
         // 본인들이 판단...
         // 이게 기본이 bcrypt임.
